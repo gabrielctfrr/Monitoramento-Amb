@@ -59,10 +59,14 @@ Crie um bot com o @BotFather
 Obtenha o TOKEN e o chat_id do destinatário
 Configure esses dados no arquivo .env do backend:
 
+```bash
 TELEGRAM_TOKEN=seu_token_aqui
 TELEGRAM_CHAT_ID=seu_chat_id_aqui
+```
+---
 
-### 5. Estrutura de Pastas
+### Estrutura de Pastas
+```bash
     .
 ├── backend/
 │   └── app.py
@@ -73,7 +77,9 @@ TELEGRAM_CHAT_ID=seu_chat_id_aqui
 ├── fotos/
 │   └── imagens para documentação
 └── README.md
+```
+---
 
-### 6. Prova de Conceito
+### Prova de Conceito
 Este projeto foi desenvolvido como uma prova de conceito (PoC), com foco em demonstrar a viabilidade técnica da integração entre sensores, backend e frontend para fins de monitoramento ambiental em tempo real.
 
