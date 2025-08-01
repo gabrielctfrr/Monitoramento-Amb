@@ -4,13 +4,15 @@
 #include <AM2320_asukiaaa.h>
 #include <MQUnifiedsensor.h>
 
-// Wi-Fi
-const char* ssid = "LIVE TIM_BA10_2G";
-const char* password = "fcf84130938";
-const char* server = "http://192.168.1.2:5000/api/dados"; // URL do backend Flask
+//Configuração do  Wi-Fi
+const char* ssid = "NOME_DA_REDE";
+const char* password = "SENHA_DA_REDE";
+const char* server = "http://IP_DO_PC:5000/api/dados"; // URL do backend Flask
 
 // Sensor de temperatura e umidade
 AM2320_asukiaaa mySensor;
+
+//Sensor de Chuva
 const int PINO_CHUVA = 35;
 
 // Sensor MQ-135
@@ -50,7 +52,7 @@ void setup() {
     while (true);
   }
 
-  // Só depois, inicie o Wi-Fi
+  // Só depois, inicia o Wi-Fi
   WiFi.begin(ssid, password);
   Serial.print("Conectando ao Wi-Fi");
   while (WiFi.status() != WL_CONNECTED) {
