@@ -40,13 +40,14 @@ Este projeto tem como objetivo o desenvolvimento de um sistema de monitoramento 
 cd backend
 pip install -r requirements.txt
 python app.py
-
+```
 
 ### 2. Frontend (React)
 ```bash
 cd frontend
 npm install
 npm start
+```
 
 ### 3. ESP32
 Abra o código esp32_monitor.ino na Arduino IDE
